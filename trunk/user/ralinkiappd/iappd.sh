@@ -10,7 +10,6 @@ start() {   if grep -q 'rai0' /proc/interrupts; then
 	    sysctl -wq net.ipv4.neigh.rax0.base_reachable_time_ms=10000
 	    sysctl -wq net.ipv4.neigh.rax0.delay_first_probe_time=1	    
 	    fi
-	    fi
 	    sysctl -wq net.ipv4.neigh.br0.base_reachable_time_ms=10000
 	    sysctl -wq net.ipv4.neigh.br0.delay_first_probe_time=1
 	    sysctl -wq net.ipv4.neigh.eth2.base_reachable_time_ms=10000
